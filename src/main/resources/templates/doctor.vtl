@@ -1,0 +1,10 @@
+<h1>$doctor.getName() doctors:</h1>
+
+<ul>
+  #foreach($doctor in $doctors)
+   <li>$doctor.getName()</li>
+  #end
+</ul>
+
+<a href="/doctors/new">Add a new doctor</a>
+<a href="/doctors">All doctors</a>

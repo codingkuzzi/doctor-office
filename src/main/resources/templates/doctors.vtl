@@ -1,0 +1,13 @@
+<h1>Doctors list!</h1>
+
+#if ($doctors)
+  <ul>
+    #foreach ($doctor in $doctors)
+      <li><a href="/doctors/$doctor.getId()">$doctor.getName()</a></li>
+    #end
+  </ul>
+#else
+  <p>No doctors</p>
+#end
+
+<a href="/doctors/new">Add New Doctor</a>
