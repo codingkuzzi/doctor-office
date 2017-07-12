@@ -57,7 +57,7 @@ public class Doctor {
         .addParameter("name", this.name)
         .addParameter("specialty", this.specialty)
         .executeUpdate();
-        //.getKey();
+        .getKey();
     }
   }
 

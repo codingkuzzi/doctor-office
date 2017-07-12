@@ -1,10 +1,10 @@
-<h1>$doctor.getName() doctors:</h1>
+<h1>$doctor.getName() patients:</h1>
 
 <ul>
-  #foreach($doctor in $doctors)
-   <li>$doctor.getName()</li>
+  #foreach($patient in $doctor.getPatients())
+   <li>$patient.getName()</li>
   #end
 </ul>
 
-<a href="/doctors/new">Add a new doctor</a>
+<a href="/doctors/$doctor.getId()/patients/new">Add a new patient</a>
 <a href="/doctors">All doctors</a>
